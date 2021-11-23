@@ -1,0 +1,75 @@
+@mixin mq($min: n, $max: n) {
+  @if ($min == custom) {
+    @media only screen and #{$max} {
+      @content;
+    }
+  } @else if ($min != n and $max == n) {
+    @media only screen and (min-width: $min) {
+      @content;
+    }
+  } @else if ($min == n and $max != n) {
+    @media only screen and (max-width: $max - 1) {
+      @content;
+    }
+  } @else if ($min != n and $max != n) {
+    @media only screen and (min-width: $min) and (max-width: $max - 1) {
+      @content;
+    }
+  }
+}
+
+// media queries and breakpoints
+$xxxs: 0;
+$xxs: 200px;
+$xs: 320px;
+$s: 400px;
+$sl: 480px;
+$sl2: 580px;
+$m: 768px;
+$ml: 992px;
+$l: 1100px;
+$xl: 1200px;
+$xxl: 1300px;
+$xxxl: 1400px;
+$xxxxl: 1500px;
+$xxxxxl: 1600px;
+$xxxxxxl: 1700px;
+
+$breakpoints: (
+  (xxxs, $xxxs),
+  (xxs, $xxs),
+  (xs, $xs),
+  (s, $s),
+  (sl, $sl),
+  (sl2, $sl2),
+  (m, $m),
+  (ml, $ml),
+  (l, $l),
+  (xl, $xl),
+  (xxl, $xxl),
+  (xxxl, $xxxl),
+  (xxxxl, $xxxxl),
+  (xxxxxl, $xxxxxl),
+  (xxxxxxl, $xxxxxxl)
+);
+
+.wrap {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 240px;
+  position: relative;
+  max-width: 1200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  zoom: 1;
+
+  @include mq($m) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

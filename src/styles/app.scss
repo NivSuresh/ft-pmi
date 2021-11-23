@@ -1,0 +1,26 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+#content {
+  position: relative;
+}
+
+.article-wrapper {
+  position: relative;
+}
+
+.app-title {
+  text-align: left;
+  font-family: $font-lato;
+}
+
+.o-cookie-message {
+  z-index: 100;
+}

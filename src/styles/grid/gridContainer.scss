@@ -1,0 +1,66 @@
+.hero__title {
+  position: relative;
+  text-align: left;
+  font-family: $font-lato;
+  color: $heading;
+  overflow: hidden;
+  margin: 25px 0;
+
+  @include mq($m) {
+    margin: 45px 0;
+  }
+
+  .line-wrap {
+    overflow: hidden;
+    height: 66px;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin: 0;
+
+    @include mq($m) {
+      font-size: 35px;
+    }
+  }
+}
+
+.grid {
+  @include mq($m) {
+    padding-bottom: 45px;
+  }
+  .grid__item {
+    @include mq($m) {
+      flex-basis: 32%;
+      max-width: 30%;
+      margin: 19px;
+    }
+  }
+}
+
+.grid-home {
+  left: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.grid-container {
+  position: relative;
+  min-height: 100vh;
+
+  .grid {
+    @include mq($m) {
+      margin: -10px -15px;
+    }
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// NEW
