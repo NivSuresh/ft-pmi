@@ -1,314 +1,314 @@
 .content__item-text {
-  font-family: $font-lato;
-  max-width: 800px;
-  margin: 0 auto;
-  h3 {
-    color: $blue;
-  }
-  p {
-    color: $copy;
-    line-height: 1.3;
-  }
-  a {
-    color: $link;
-  }
-  i {
-    font-family: $font-lato;
-    color: $copy;
-    font-size: 1.2em;
-  }
+	font-family: $font-lato;
+	max-width: 800px;
+	margin: 0 auto;
+	h3 {
+		color: $blue;
+	}
+	p {
+		color: $copy;
+		line-height: 1.3;
+	}
+	a {
+		color: $link;
+	}
+	i {
+		font-family: $font-lato;
+		color: $copy;
+		font-size: 1.2em;
+	}
 
-  video {
-    width: 100%;
-  }
+	video {
+		width: 100%;
+	}
 
-  img {
-    width: 100%;
-  }
+	img {
+		width: 100%;
+	}
 
-  .quote {
-    font-size: 22px;
-    display: block;
-    padding: 10px 0 20px 0;
-    text-align: center;
-    position: relative;
+	.quote {
+		font-size: 22px;
+		display: block;
+		padding: 10px 0 20px 0;
+		text-align: center;
+		position: relative;
 
-    &:before {
-      content: "";
-      width: 200px;
-      background-color: $blue;
-      height: 3px;
-      display: block;
-      margin: 20px auto;
-    }
+		&:before {
+			content: '';
+			width: 200px;
+			background-color: $blue;
+			height: 3px;
+			display: block;
+			margin: 20px auto;
+		}
 
-    &:after {
-      content: "";
-      width: 60px;
-      height: 60px;
-      display: block;
-      text-align: center;
-      background-image: url(https://ft.com/brandsuite/scienceofselfdisruption/imgs/quote1.svg);
-      background-position: center center;
-      background-size: contain;
-      position: absolute;
-      z-index: -1;
-      opacity: 0.3;
-      top: 50px;
-      left: initial;
-      right: 0;
-      transform: scale(-1);
-    }
+		&:after {
+			content: '';
+			width: 60px;
+			height: 60px;
+			display: block;
+			text-align: center;
+			background-image: url(https://ft.com/brandsuite/scienceofselfdisruption/imgs/quote1.svg);
+			background-position: center center;
+			background-size: contain;
+			position: absolute;
+			z-index: -1;
+			opacity: 0.3;
+			top: 50px;
+			left: initial;
+			right: 0;
+			transform: scale(-1);
+		}
 
-    @include mq($m) {
-      font-size: 25px;
-      float: right;
-      max-width: 350px;
-      text-align: right;
-      padding: 20px;
-      padding-right: 0;
+		@include mq($m) {
+			font-size: 25px;
+			float: right;
+			max-width: 350px;
+			text-align: right;
+			padding: 20px;
+			padding-right: 0;
 
-      &.left {
-        float: left;
-        text-align: left;
-        padding-right: 20px;
-        padding-left: 0;
-        &:after {
-          left: 0;
-          right: initial;
-          transform: scale(1);
-        }
-      }
-    }
-  }
+			&.left {
+				float: left;
+				text-align: left;
+				padding-right: 20px;
+				padding-left: 0;
+				&:after {
+					left: 0;
+					right: initial;
+					transform: scale(1);
+				}
+			}
+		}
+	}
 }
 
 .content__item-text__content {
-  @include mq($m) {
-    margin-bottom: 50px;
-  }
+	@include mq($m) {
+		margin-bottom: 50px;
+	}
 }
 
 .content__item-heading {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
 
-  @include mq($m) {
-    margin: 50px 0;
-  }
+	@include mq($m) {
+		margin: 50px 0;
+	}
 }
 .content__item-heading-home {
-  cursor: pointer;
+	cursor: pointer;
 
-  img {
-    max-width: 40px;
-  }
+	img {
+		max-width: 40px;
+	}
 
-  @include mq($m) {
-    position: absolute;
-    left: 0;
-    top: 10px;
-  }
+	@include mq($m) {
+		position: absolute;
+		left: 0;
+		top: 10px;
+	}
 }
 .content__item-heading-title {
-  font-family: $font-lato;
-  color: #393939;
-  max-width: 300px;
+	font-family: $font-lato;
+	color: #393939;
+	max-width: 300px;
 
-  @include mq($m) {
-    font-size: 35px;
-    max-width: 650px;
+	@include mq($m) {
+		font-size: 35px;
+		max-width: 650px;
 
-    h2 {
-      margin: 0;
-    }
-  }
+		h2 {
+			margin: 0;
+		}
+	}
 }
 
 .content-cta {
-  margin: 25px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+	margin: 25px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 
-  @include mq($m) {
-    display: initial;
-    margin-top: 25px;
-    margin-bottom: 0;
-  }
+	@include mq($m) {
+		display: initial;
+		margin-top: 25px;
+		margin-bottom: 0;
+	}
 
-  .cta {
-    text-decoration: none;
-    background-color: $blue;
-    color: $white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 4px;
-    font-family: $font-lato;
-    margin: 15px 0;
-  }
+	.cta {
+		text-decoration: none;
+		background-color: $blue;
+		color: $white;
+		padding: 15px 30px;
+		border: none;
+		border-radius: 4px;
+		font-family: $font-lato;
+		margin: 15px 0;
+	}
 }
 
 .content-cta__share {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 
-  span {
-    font-family: $font-lato;
-    font-weight: bold;
-    font-size: initial !important;
-  }
+	span {
+		font-family: $font-lato;
+		font-weight: bold;
+		font-size: initial !important;
+	}
 
-  a {
-    max-width: 30px;
-    transform: scale(1);
-    @include mq($m) {
-      &:hover {
-        transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 0.8);
+	a {
+		max-width: 30px;
+		transform: scale(1);
+		@include mq($m) {
+			&:hover {
+				transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 0.8);
 
-        &:hover {
-          img {
-            transform: scale(1.3);
-            transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 0.8);
-          }
-        }
-      }
-    }
-  }
+				&:hover {
+					img {
+						transform: scale(1.3);
+						transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 0.8);
+					}
+				}
+			}
+		}
+	}
 
-  img {
-    margin: 0;
-  }
+	img {
+		margin-right: 5px;
+	}
 }
 
 .inline-article-image {
-  display: block;
-  text-align: center;
+	display: block;
+	text-align: center;
 
-  @include mq($m) {
-    display: inline-block;
-    text-align: initial;
+	@include mq($m) {
+		display: inline-block;
+		text-align: initial;
 
-    &.-left {
-      float: left;
-      margin-left: 0;
-      margin-top: 0;
-      margin-bottom: 0;
-      margin-right: 10px;
-      text-align: left;
-    }
+		&.-left {
+			float: left;
+			margin-left: 0;
+			margin-top: 0;
+			margin-bottom: 0;
+			margin-right: 10px;
+			text-align: left;
+		}
 
-    &.-right {
-      float: right;
-      margin-left: 10px;
-      margin-top: 0;
-      margin-bottom: 0;
-      margin-right: 0;
-    }
-  }
+		&.-right {
+			float: right;
+			margin-left: 10px;
+			margin-top: 0;
+			margin-bottom: 0;
+			margin-right: 0;
+		}
+	}
 
-  &.-center {
-    width: 100%;
-    text-align: center;
-    margin: 10px 0;
+	&.-center {
+		width: 100%;
+		text-align: center;
+		margin: 10px 0;
 
-    img {
-    }
-  }
+		img {
+		}
+	}
 
-  img {
-    max-height: 400px;
-    object-fit: cover;
-    object-position: center center;
-    width: initial;
-    margin-bottom: 10px;
-  }
-  figcaption {
-    font-size: 14px;
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 5px;
-  }
+	img {
+		max-height: 400px;
+		object-fit: cover;
+		object-position: center center;
+		width: initial;
+		margin-bottom: 10px;
+	}
+	figcaption {
+		font-size: 14px;
+		font-style: italic;
+		text-align: center;
+		margin-bottom: 5px;
+	}
 }
 
 .content__item-text__img {
-  max-height: 500px;
-  position: relative;
-  margin: 30px 0;
+	max-height: 500px;
+	position: relative;
+	margin: 30px 0;
 
-  &.-normal {
-    img {
-      object-fit: contain;
-      object-position: center center;
-    }
-    span {
-      position: absolute;
-      bottom: -20px;
-      width: 100%;
-      text-align: center;
-      font-style: italic;
-    }
-  }
+	&.-normal {
+		img {
+			object-fit: contain;
+			object-position: center center;
+		}
+		span {
+			position: absolute;
+			bottom: -20px;
+			width: 100%;
+			text-align: center;
+			font-style: italic;
+		}
+	}
 
-  &.-large {
-    @include mq($m) {
-      max-height: initial;
+	&.-large {
+		@include mq($m) {
+			max-height: initial;
 
-      img {
-        width: 100vw;
-        left: 50%;
-        right: 50%;
-        margin: 0 auto 16px;
-        margin: 0 auto 1rem;
-        margin-left: -50vw;
-        max-width: none;
-      }
+			img {
+				width: 100vw;
+				left: 50%;
+				right: 50%;
+				margin: 0 auto 16px;
+				margin: 0 auto 1rem;
+				margin-left: -50vw;
+				max-width: none;
+			}
 
-      &:after {
-        content: "";
-        display: block;
-        padding-bottom: 86%;
-      }
-    }
-  }
+			&:after {
+				content: '';
+				display: block;
+				padding-bottom: 86%;
+			}
+		}
+	}
 
-  &:after {
-    content: "";
-    display: block;
-    padding-bottom: 56%;
-  }
+	&:after {
+		content: '';
+		display: block;
+		padding-bottom: 56%;
+	}
 
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    object-position: center center;
-    width: 100%;
-    height: 100%;
-  }
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+		object-position: center center;
+		width: 100%;
+		height: 100%;
+	}
 }
 
-.grid__item[data-ref="5"] {
-  // display: none;
+.grid__item[data-ref='5'] {
+	// display: none;
 }
 
 .footnotes {
-  margin-top: 50px;
+	margin-top: 50px;
 }
 
 .subtitle {
-  font-style: italic;
+	font-style: italic;
 }
 
 .quote-author {
-  font-size: 15px;
-  display: block;
-  margin-top: 10px;
-  font-style: italic;
+	font-size: 15px;
+	display: block;
+	margin-top: 10px;
+	font-style: italic;
 }

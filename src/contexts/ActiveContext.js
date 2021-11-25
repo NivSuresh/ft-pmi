@@ -92,23 +92,24 @@ export const ActiveProvider = (props) => {
       }
 
       const data = {
-        action: "view",
-        category: "brandedContent",
-        feature: tagging.feature,
-        author: tagging.contentAuthor,
-        sponsor: tagging.sponsor,
-        articleName: tagging.title,
-        campaign: tagging.campaignName,
-        hasVideo: tagging.hasVideo,
-        videoType: tagging.videoType,
-        branded: tagging.brandedContent,
-        primaryTopic: tagging.primaryTopic,
-        secondaryTopic: tagging.secondaryTopic,
-        advertiserIndustry: tagging.advertiserIndustry,
-        contentType: tagging.contentType,
-        app: tagging.articleApp,
-        publishDate: tagging.pubDate,
-      };
+				action: 'view',
+				category: 'brandedContent',
+				feature: tagging.feature,
+				author: tagging.contentAuthor,
+				sponsor: tagging.sponsor,
+				articleName: tagging.title,
+				campaign: tagging.campaignName,
+				hasVideo: tagging.hasVideo,
+				videoType: tagging.videoType,
+				branded: tagging.brandedContent,
+				primaryTopic: tagging.primaryTopic,
+				secondaryTopic: tagging.secondaryTopic,
+				advertiserIndustry: tagging.advertiserIndustry,
+				contentType: tagging.contentType,
+				app: tagging.articleApp,
+				publishDate: tagging.pubDate,
+				adbook_campaign_id: tagging.adbook_campaign_id
+			};
       broadcast("oTracking.event", data);
     };
 
